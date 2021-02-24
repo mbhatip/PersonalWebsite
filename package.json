@@ -1,0 +1,26 @@
+{
+  "name": "personalwebsite",
+  "version": "1.0.0",
+  "description": "a personal website for Junead Khan",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "bulma": "^0.9.2",
+    "jquery": "^3.5.1",
+    "node.js": "0.0.1-security"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juneadkhan/PersonalWebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juneadkhan/PersonalWebsite/issues"
+  },
+  "homepage": "https://github.com/juneadkhan/PersonalWebsite#readme"
+}
