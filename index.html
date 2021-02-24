@@ -1,16 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Junead Khan</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-        </head>
 
-    <body>
-        <div id="root"></div>
-        <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
-        <script src="main.js" type="module"></script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junead Khan</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="root"></div>
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+    <header class="navbar is-fixed-top is-transparent is-black">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item">
+                    <p class="title is-5 has-text-white">Junead Khan</p>
+                </a>
+                <span class="navbar-burger" data-target="navbarMenuHeroC">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+            <div id="navbarMenuHeroC" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item is-active">
+                        Home
+                    </a>
+                    <a class="navbar-item">
+                        Resume
+                    </a>
+                    <a class="navbar-item">
+                        Projects
+                    </a>
+                    <a class="navbar-item">
+                        Contact
+                    </a>
+                    <span class="navbar-item">
+                        <div class="field is-grouped">
+                            <p class="control">
+                                <button class="button">
+                                    <span class="icon">
+                                        <i class="fa fa-github"></i>
+                                    </span>
+                                    <span>GitHub</span>
+                                </button>
+                            </p>
+                            <p class="control">
+                                <button class="button is-info">
+                                    <span class="icon" style="color: white;">
+                                        <i class="fa fa-linkedin"></i>
+                                    </span>
+                                    <span>LinkedIn</span>
+                                </button>
+                            </p>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero is-medium is-dark">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column is-one-third">
+                        <figure class="image is-1by1">
+                            <img class="is-rounded" style="  max-width: 80%; max-height: 80%;"
+                                src="https://avatars.githubusercontent.com/u/54591708?s=460&u=93536f1f11be2df23349002c3feaf24c98c5328f&v=4">
+                        </figure>
+                    </div>
+
+                    <div class="column is-two-thirds">
+                        <h1 class="title is-1 has-text-weight-bold"> Hey, I'm Junead Khan <span>👋🏽</span> </h1>
+                        <h1 class="title is-3">The University of North Carolina at Chapel Hill</h1>
+                        <h1 class="subtitle is-3">Computer Science and Biostatistics</h1>
+
+
+                        <div class="columns is-vcentered">
+                            <div class="column is-one-half">
+                                <h1 class="title is-5">Incoming Software Engineer Intern</h1>
+                                <h1 class="subtitle is-5">JP Morgan Chase & Co</h1>
+                            </div>
+
+                            <div class="column is-one-half">
+                                <h1 class="title is-5">Asosciate Research Consultant</h1>
+                                <h1 class="subtitle is-5">London School of Hygiene and Tropical Medicine</h1>
+                            </div>
+
+                        </div>
+                        <h1 class="subtitle is-3">_______</h1>
+
+
+                        <h1 class="subtitle is-5">Find me on LinkedIn and GitHub</h1>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero is-small is-primary">
+        <div class="hero-body">
+            <h1 class="title">Work Experience</h1>
+            <div class="container" id = 'workSection'>
+                <script src="workExperience.js" type="module"></script>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
 </html>
