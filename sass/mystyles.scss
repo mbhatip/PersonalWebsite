@@ -5,21 +5,23 @@
 
 // Set your brand colors
 $purple: #EE3F95;
-$pink: #FA7C91;
-$brown: #757763;
+$pink: #e2d5fe;
+$brown: #9b6bff;
 $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
+$blue: #01bbf0;
+
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
 $grey-dark: $brown;
 $grey-light: $beige-light;
 $primary: $purple;
-$link: $pink;
-
-
-// Update some of Bulma's component variables
-$body-background-color: $beige-lighter;
+$light: $pink;
+$link: $brown;
+$info: $blue;
+$tag-radius: 12px;
+$body-background-color: #000000;
 
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/utilities/_all.sass";

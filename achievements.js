@@ -1,15 +1,11 @@
 export const loadDOM = function (listOfJobs) {
-  const $workSection = $('#educSection');
+  const $workSection = $('#achvSection');
 
-  listOfJobs.forEach(job => {
-    $workSection.append(workCard(job))
+  $workSection.append(achievementCard())
 
-
-
-});
 };
 
-export const workCard = function(job) {
+export const achievementCard = function() {
   return `
   <style>
   #educContainer{
@@ -17,14 +13,13 @@ export const workCard = function(job) {
   }
 
   </style>
+  <div class="column">
   <div class="card mb-5">
   <div class="container" id="educContainer">
-  <div class="columns is-vcentered">
-  <div class="column is-one-quarter">
 
   <div class="card-image">
     <figure class="image pl-5">
-      <img src=${job.img} alt="Placeholder image">
+      <img src="" alt="Placeholder image">
     </figure>
   </div>
 
@@ -35,23 +30,13 @@ export const workCard = function(job) {
   <div class="card-content">
     <div class="media">
       <div class="media-content">
-        <p class="is-size-4	has-text-info has-text-weight-bold">${job.companyName}</p>
-        <p class="is-size-5 has-text-white has-text-weight-medium	">${job.jobTitle}</p>
-        <p class="is-size-6 has-text-white">${job.dates}</p>
-        <p class="is-size-6 has-text-white is-italic	">${job.location}</p>
-        <p class="is-size-6 has-text-white pt-3">${job.bullet1}</p>
-        <p class="is-size-6 has-text-white pb-3">${job.bullet2}</p>
+        <p class="is-size-4	has-text-primary has-text-weight-bold">Morehead-Cain</p>
+        <p class="is-size-5 has-text-white has-text-weight-medium	">LOL</p>
+        <p class="is-size-6 has-text-white">LOL</p>
+        <p class="is-size-6 has-text-white pt-3">LOL</p>
+        <p class="is-size-6 has-text-white pb-3">LOL</p>
 
         <div class="tags">
-        ${job.tag1}
-        ${job.tag2}
-        ${job.tag3}
-        ${job.tag4}
-        ${job.tag5}
-        ${job.tag6}
-        ${job.tag7}
-        ${job.tag8}
-
 
         </div>
 
@@ -59,13 +44,11 @@ export const workCard = function(job) {
     </div>
 
   </div>
-  
+    
   </div>
   
   </div>
-  
-  </div>
-    `
+  `
 }
 
 $(function () {

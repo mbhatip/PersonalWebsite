@@ -13,8 +13,13 @@
     <div id="root"></div>
     <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
 
+    <style>
+        ::-moz-selection { background-color:#ff3860; color: white;}
+        ::selection { background-color:#ff3860; color: white; }
+    </style>
+
     <header class="navbar is-fixed-top is-transparent is-black">
-        <div class="container">
+        <div class="container px-6">
             <div class="navbar-brand">
                 <a class="navbar-item">
                     <p class="title is-5 has-text-white">Junead Khan</p>
@@ -50,7 +55,7 @@
                                 </button>
                             </p>
                             <p class="control">
-                                <button class="button is-info">
+                                <button class="button is-info" style="background-color: #3298dc;">
                                     <span class="icon" style="color: white;">
                                         <i class="fa fa-linkedin"></i>
                                     </span>
@@ -64,9 +69,9 @@
         </div>
     </header>
 
-    <section class="hero is-medium is-black">
+    <section class="hero is-medium is-black px-6">
         <div class="hero-body">
-            <div class="container">
+            <div class="container px-6">
                 <div class="columns is-vcentered">
                     <div class="column is-one-third">
                         <figure class="image is-1by1">
@@ -77,8 +82,12 @@
 
                     <div class="column is-two-thirds">
                         <h1 class="title is-1 has-text-weight-bold"> Hey, I'm Junead Khan <span>👋🏽</span> </h1>
-                        <h1 class="title is-3 has-text-primary">The University of North Carolina at Chapel Hill</h1>
-                        <h1 class="subtitle is-4">Computer Science and Biostatistics</h1>
+                        <h1 class="title is-3 has-text-primary has-text-weight-light pb-3">I am a software engineer ✨ who loves to use technology to make peoples lives better 😊. I am passionate about engaging kids in education 📚, improving social mobility 📈, and using computer science and data to better public health.
+        
+                        </h1>
+
+                        <h1 class="title is-5 has-text-primary">The University of North Carolina at Chapel Hill</h1>
+                        <h1 class="subtitle is-5">Computer Science and Biostatistics</h1>
 
                         <div class="columns is-vcentered">
                             <div class="column is-one-half">
@@ -88,14 +97,15 @@
 
                             <div class="column is-one-half">
                                 <h1 class="title is-5 has-text-primary">Asosciate Research Consultant</h1>
-                                <h1 class="subtitle is-5">London School of Hygiene and Tropical Medicine</h1>
+                                <h1 class="subtitle is-5" >London School of Hygiene and Tropical Medicine</h1>
                             </div>
 
                         </div>
                         <h1 class="subtitle is-3">_______</h1>
 
 
-                        <h1 class="subtitle is-5">Find me on LinkedIn and GitHub</h1>
+                        <h1 class="subtitle is-5" style="color: #696b8c;">Find me on <a class="has-text-weight-semibold" style="color: #3298dc;"href="https://www.linkedin.com/in/junead-khan/">LinkedIn</a> and 
+                            <a class="has-text-weight-semibold" style="color: lightgray" href="https://github.com/juneadkhan">GitHub</a></h1>
 
                     </div>
 
@@ -105,8 +115,8 @@
         </div>
     </section>
 
-    <section class="hero is-small is-black">
-        <div class="hero-body">
+    <section class="hero is-small is-black px-6">
+        <div class="hero-body px-6">
             <h1 class="title has-text-centered pb-3">Work Experience</h1>
             <div class="container" id='workSection'>
                 <script src="workExperience.js" type="module"></script>
@@ -114,8 +124,8 @@
         </div>
     </section>
 
-    <section class="hero is-small is-black">
-        <div class="hero-body">
+    <section class="hero is-small is-black px-6">
+        <div class="hero-body px-6">
             <h1 class="title has-text-centered pb-3 pt-6">Education History</h1>
             <div class="container" id='educSection'>
                 <script src="educationHistory.js" type="module"></script>
