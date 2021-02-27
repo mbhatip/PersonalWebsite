@@ -1,53 +1,38 @@
 export const loadDOM = function (listOfJobs) {
   const $workSection = $('#achvSection');
 
-  $workSection.append(achievementCard())
+  listOfJobs.forEach(job => {
+    $workSection.append(achievementCard(job))
+  });
 
 };
 
-export const achievementCard = function() {
+export const achievementCard = function(achv) {
   return `
   <style>
-  #educContainer{
+  #achvCard{
     background-color: black;
   }
 
   </style>
-  <div class="column">
-  <div class="card mb-5">
-  <div class="container" id="educContainer">
-
+  <div class = "column">
+  <div class="card" id="achvCard">
   <div class="card-image">
-    <figure class="image pl-5">
-      <img src="" alt="Placeholder image">
+    <figure class="image is-1by1">
+      <img src=${achv.img} alt="Placeholder image">
     </figure>
   </div>
-
-  </div>
-
-  <div class="column is-one-half">
-
-  <div class="card-content">
-    <div class="media">
-      <div class="media-content">
-        <p class="is-size-4	has-text-primary has-text-weight-bold">Morehead-Cain</p>
-        <p class="is-size-5 has-text-white has-text-weight-medium	">LOL</p>
-        <p class="is-size-6 has-text-white">LOL</p>
-        <p class="is-size-6 has-text-white pt-3">LOL</p>
-        <p class="is-size-6 has-text-white pb-3">LOL</p>
-
-        <div class="tags">
-
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-    
-  </div>
   
+  <div class="card-content">
+    <div class="content">
+    <p class="title is-6 pb-3 has-text-info">${achv.name}</p>
+    <p class="subtitle is-7	has-text-white">${achv.description}</p>
+
+    </div>
   </div>
+</div>
+</div>
+
   `
 }
 
@@ -62,20 +47,32 @@ SEE DATA BELOW
 const workData = [
   {
   id: 1,
-  companyName: "The University of North Carolina at Chapel Hill",
-  jobTitle: "Bachelor of Science - BSPH Computer Science and Biostatistics",
-  dates: "Minor in Neuroscience",
-  location: "",
-  img: "https://d1gntqhqj0rbcs.cloudfront.net/assets/111/whiteunclogo.png",
-  bullet1: "",
-  bullet2: "",
-  tag1: ``,
-  tag2: ``,
-  tag3: ``,
-  tag4: ``,
-  tag5: ``,
-  tag6: ``,
-  tag7: ``,
-  tag8: `` 
+  name: "Morehead-Cain Scholar",
+  description: "Prestigous merit scholarship awarded on leadership, scholarship and physical vigour",
+  img: "https://pbs.twimg.com/profile_images/935221730867429376/1ZlBy2PM_400x400.jpg"
+},
+{
+  id: 2,
+  name: "Honors Carolina",
+  description: "Highly competitive academic program admitting 10% of each incoming class",
+  img: "assets/honorsLogo.png"
+},
+{
+  id: 3,
+  name: "US Programme Scholar",
+  description: "Selected amongst the UK's brightest students to explore US higher education",
+  img: "assets/suttonlogo.png"
+},
+{
+  id: 4,
+  name: "Young Entrepreneur of the Year",
+  description: "Recognized at Slough Youth Awards 2018",
+  img: "https://pbs.twimg.com/media/DN-hLv2WsAAbICq.jpg"
+},
+{
+  id: 5,
+  name: "US-UK Fulbright Commission",
+  description: "Recieved support for US College applications.",
+  img: "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/10730770_10152892259022474_5518224321102718617_n.png?_nc_cat=107&ccb=3&_nc_sid=09cbfe&_nc_ohc=cLsGWseFCNkAX8KHxCJ&_nc_ht=scontent-iad3-1.xx&oh=0bf7e59bdf0fc8194e9d66aa2794064c&oe=606078F4"
 }
 ];
