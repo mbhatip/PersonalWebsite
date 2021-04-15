@@ -98,7 +98,7 @@ const workData = [
 {
   id: 2,
   companyName: "London School of Hygiene and Tropical Medicine",
-  jobTitle: "Asociate Research Consultant",
+  jobTitle: "Associate Research Consultant",
   dates: "February 2021 to Present",
   location: "London, UK",
   img: "https://www.lshtm.ac.uk/themes/custom/lshtm/images/logo-white.svg",
