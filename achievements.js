@@ -73,6 +73,6 @@ const workData = [
   id: 5,
   name: "US-UK Fulbright Commission",
   description: "Recieved support for US College applications.",
-  img: "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/10730770_10152892259022474_5518224321102718617_n.png?_nc_cat=107&ccb=3&_nc_sid=09cbfe&_nc_ohc=cLsGWseFCNkAX8KHxCJ&_nc_ht=scontent-iad3-1.xx&oh=0bf7e59bdf0fc8194e9d66aa2794064c&oe=606078F4"
+  img: "https://lh3.googleusercontent.com/proxy/zp7ZC6KNDT6AGeSnezVagbdP-O0TxSq_j3VT4EFXaR7yWjLfwZXgQ8WrOpTXN6HB1FbIoq6hHVzRaMEl7vYntxdisaX0OcHv"
 }
 ];
